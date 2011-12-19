@@ -4,5 +4,8 @@
 	"type": "composer-installer",
 	"require": {
 		"php": ">=5.3.0"
+	},
+	"extra": {
+		"class": "Flow3ComposerConnector\FLOW3PackageInstaller"
 	}
 }
