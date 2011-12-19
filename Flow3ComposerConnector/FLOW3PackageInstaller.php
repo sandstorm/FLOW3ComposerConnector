@@ -11,6 +11,7 @@ class FLOW3PackageInstaller extends \Composer\Installer\LibraryInstaller {
      */
     public function supports($packageType)
     {
+    	return FALSE;
     	var_dump($packageType, ($packageType === 'flow3-package'));
         return ($packageType === 'flow3-package');
     }
