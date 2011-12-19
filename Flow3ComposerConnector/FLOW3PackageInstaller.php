@@ -20,6 +20,7 @@ class FLOW3PackageInstaller extends \Composer\Installer\LibraryInstaller {
      */
     public function getInstallPath(PackageInterface $package)
     {
+    	var_dump("getInstallPath called");
 		$extra = $package->getExtra();
 		if (!isset($extra['packageKey'])) {
 			throw new \Exception("extra[packageKey] must be set for FLOW3 packages");
