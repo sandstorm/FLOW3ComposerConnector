@@ -1,6 +1,9 @@
 <?php
 
 namespace Flow3ComposerConnector;
+
+use Composer\Package\PackageInterface;
+
 class FLOW3PackageInstaller extends \Composer\Installer\LibraryInstaller {
 
     /**
