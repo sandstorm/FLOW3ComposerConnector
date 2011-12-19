@@ -1,4 +1,4 @@
-<Car><?php
+<?php
 
 namespace Flow3ComposerConnector;
 
