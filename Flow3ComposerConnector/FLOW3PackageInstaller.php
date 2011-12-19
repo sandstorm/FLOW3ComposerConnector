@@ -11,8 +11,6 @@ class FLOW3PackageInstaller extends \Composer\Installer\LibraryInstaller {
      */
     public function supports($packageType)
     {
-    	return FALSE;
-    	var_dump($packageType, ($packageType === 'flow3-package'));
         return ($packageType === 'flow3-package');
     }
 
@@ -29,9 +27,7 @@ class FLOW3PackageInstaller extends \Composer\Installer\LibraryInstaller {
 		if (!isset($extra['suggestedLocation'])) {
 			throw new \Exception("extra[suggestedLocation] must be set for FLOW3 packages");
 		}
-		var_dump(realpath('Packages'));
-		$path = 'Packages/' . $extra['suggestedLocation'] . '/' . $extra['packageKey'];
-        var_dump($path);
+		$path = realpath('Packages') . '/' . $extra['suggestedLocation'] . '/' . $extra['packageKey'];
         return $path;
     }
 }
