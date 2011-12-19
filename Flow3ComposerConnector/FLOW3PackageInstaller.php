@@ -28,7 +28,8 @@ class FLOW3PackageInstaller extends \Composer\Installer\LibraryInstaller {
 		if (!isset($extra['suggestedLocation'])) {
 			throw new \Exception("extra[suggestedLocation] must be set for FLOW3 packages");
 		}
-
-        return 'Packages/' . $extra['suggestedLocation'] . '/' . $extra['packageKey'];
+		$path = 'Packages/' . $extra['suggestedLocation'] . '/' . $extra['packageKey'];
+        var_dump($path);
+        return $path;
     }
 }
