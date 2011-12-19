@@ -34,4 +34,3 @@ class FLOW3PackageInstaller extends \Composer\Installer\LibraryInstaller {
         return $path;
     }
 }
-</Car>
